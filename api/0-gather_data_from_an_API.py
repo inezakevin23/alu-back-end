@@ -15,9 +15,9 @@ if __name__ == "__main__":
     employee_id = sys.argv[1]
 
     # Define the URLs
-    base-url = "https://jsonplaceholder.typicode.com"
-    user_url = f"{base-url}/users/{employee_id}"
-    todos_url = f"{base-url}/todos?userId={employee_id}"
+    base_url = "https://jsonplaceholder.typicode.com"
+    user_url = f"{base_url}/users/{employee_id}"
+    todos_url = f"{base_url}/todos?userId={employee_id}"
 
     # Get user data
     user_response = requests.get(user_url)
@@ -53,3 +53,4 @@ if __name__ == "__main__":
     # Print completed task titles
     for task in completed_tasks:
         print(f"\t {task.get('title')}")
+
