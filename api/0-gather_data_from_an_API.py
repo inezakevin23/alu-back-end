@@ -15,8 +15,9 @@ if __name__ == "__main__":
     employee_id = sys.argv[1]
 
     # Define the URLs
-    user_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
-    todos_url = f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
+    base-url = "https://jsonplaceholder.typicode.com"
+    user_url = f"{base-url}/users/{employee_id}"
+    todos_url = f"{base-url}/todos?userId={employee_id}"
 
     # Get user data
     user_response = requests.get(user_url)
